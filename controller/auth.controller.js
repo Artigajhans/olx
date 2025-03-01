@@ -69,7 +69,8 @@ exports.verifyAdminOTP = asyncHandler(async (req, res) => {
         message: "login success",
         result: {
             name: result.name,
-            email: result.email
+            email: result.email,
+            mobile: result.mobile
         }
     })
     // res.json({ message: "admin verify otp success" })
@@ -116,6 +117,7 @@ exports.loginUser = asyncHandler(async (req, res) => {
             _id: result._id,
             name: result.name,
             email: result.email,
+            mobile: result.mobile,
             city: result.city,
             address: result.address,
             infoComplete: result.infoComplete
