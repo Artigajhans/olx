@@ -5,3 +5,4 @@ router
     .get("/products", getPublicProducts)
     .get("/product-details/:productId", getPublicProductDetails)
 module.exports = router
+
